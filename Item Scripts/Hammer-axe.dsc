@@ -15,8 +15,6 @@ Increased_Range_Handler:
     debug: false
     type: world
     events:
-        on player damaged by freeze flagged:frozen:
-        - determine cancelled
         on player breaks block with:item_flagged:excavator:
         - if <player.has_flag[mining_cooldown]>:
             - stop
